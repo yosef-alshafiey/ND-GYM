@@ -1,0 +1,64 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 20px;
+  height: 60px;
+  box-shadow: 2px 2px 2px 5px #292929;
+  transition: background-color 0.3s ease;
+  color: #A34343;
+  border-radius: 20px;
+  font-size: 25px;
+  font-weight: 2500;
+}
+
+.dropdown {
+  width: 157px;
+  background-color: #FFF078;
+  border-radius: 10px;
+}
+
+.dropdown:hover {
+  color: black;
+  background-color: #FFF078;
+}
+
+.gym-icon {
+  font-size: 45px;
+  color: #FFF078;
+}
+
+.gym-icon:hover {
+  transform: rotate(32deg) ;
+}
+
+.d-flex button {
+  border: 0 solid #fff;
+  color: black;
+  background-color: #FFF078;
+
+}
+
+.d-flex button:hover {
+  background-color: #FFF078;
+  color: black;
+}
+
+@media(max-width:600px) {
+  .d-flex {
+    max-width: 180px;
+  }
+  .gym-icon {
+    font-size: 35px;
+  }
+  .d-flex button {
+    width: 57px;
+    padding-left: 2px;
+  }
+
+  .dropdown {
+    max-width: 100px;
+  }
+
+}
+

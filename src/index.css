@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800");
+
+* {
+  box-sizing: border-box;
+}
+#root{
+  width: 100%;
+  height: 700px;
+}
+body {
+  display: flex;
+  font-weight: 400;
+  font-family: "Fira Sans", sans-serif;
+  height: auto;
+  height: 100%;
+
+}
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 98vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  transition: background-color 0.3s ease;
+  position: relative;
+  border-radius:20px;
+}
+
+
+.toggle-container {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  margin-top: 15px;
+  max-width: 200px;
+  position: absolute;
+  bottom: 90%;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.toggle-button {
+  background-color: #c8d2d0;
+  width: 120px;
+  height:45px;
+  border-radius: 25px;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-button::before {
+  position: absolute;
+  content: '';
+  background-color: #333e40;
+  width: 53px;
+  height: 43px;
+  border-radius: 50%;
+  top: 1px;
+  left: 1px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+input:checked + .toggle-button::before {
+  transform: translateX(65px);
+  background-color: #333e40;
+}
+
+@media(max-width:1000px){
+  
+
+.toggle-button {
+  background-color: #c8d2d0;
+  width: 70px;
+  height:35px;
+}
+
+.toggle-button::before {
+  width: 34px;
+  height: 33px;
+}
+
+input:checked + .toggle-button::before {
+  transform: translateX(33px);
+}
+.toggle-container {
+
+  margin-left: 2px;
+  bottom: 93%;
+}
+.body{
+  height: 650px;
+  
+}
+}
